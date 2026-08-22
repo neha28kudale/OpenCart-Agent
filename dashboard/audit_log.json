@@ -1,0 +1,100 @@
+[
+  {
+    "timestamp": "2026-08-22T14:38:59.765879",
+    "buyer_agent_id": "chatgpt-shopper-8841",
+    "intent": {
+      "attributes": {
+        "category": "apparel",
+        "color": "white",
+        "size": "M"
+      },
+      "max_price": 800,
+      "buyer_confirmed": false
+    },
+    "result": {
+      "status": "COMPLETED",
+      "sku": "TS-WHT-M",
+      "item_name": "Everyday White Tee",
+      "price": 499,
+      "reason": "Matched 'Everyday White Tee' at 100% attribute fit, within all guardrails. Charged via Razorpay (test mode).",
+      "razorpay_order_id": "order_test_TS-WHT-M_8841"
+    }
+  },
+  {
+    "timestamp": "2026-08-22T14:38:59.766533",
+    "buyer_agent_id": "perplexity-buyer-3390",
+    "intent": {
+      "attributes": {
+        "category": "apparel",
+        "color": "black",
+        "size": "M"
+      },
+      "max_price": 1500,
+      "buyer_confirmed": false
+    },
+    "result": {
+      "status": "NEEDS_CONFIRMATION",
+      "sku": "HD-BLK-M",
+      "price": 1299,
+      "reason": "Price \u20b91299 is above \u20b91000, so explicit buyer-agent confirmation is required before charging."
+    }
+  },
+  {
+    "timestamp": "2026-08-22T14:38:59.767102",
+    "buyer_agent_id": "perplexity-buyer-3390",
+    "intent": {
+      "attributes": {
+        "category": "apparel",
+        "color": "black",
+        "size": "M"
+      },
+      "max_price": 1500,
+      "buyer_confirmed": true
+    },
+    "result": {
+      "status": "COMPLETED",
+      "sku": "HD-BLK-M",
+      "item_name": "Classic Black Hoodie",
+      "price": 1299,
+      "reason": "Matched 'Classic Black Hoodie' at 100% attribute fit, within all guardrails. Charged via Razorpay (test mode).",
+      "razorpay_order_id": "order_test_HD-BLK-M_3390"
+    }
+  },
+  {
+    "timestamp": "2026-08-22T14:38:59.767638",
+    "buyer_agent_id": "rogue-agent-0001",
+    "intent": {
+      "attributes": {
+        "category": "apparel",
+        "color": "blue",
+        "size": "L",
+        "material": "denim"
+      },
+      "max_price": 999999,
+      "buyer_confirmed": true
+    },
+    "result": {
+      "status": "DECLINED",
+      "sku": "JK-DNM-L",
+      "reason": "Price \u20b92999 exceeds the merchant's max single-transaction limit of \u20b92500 for AI-buyer purchases."
+    }
+  },
+  {
+    "timestamp": "2026-08-22T14:38:59.768179",
+    "buyer_agent_id": "chatgpt-shopper-8841",
+    "intent": {
+      "attributes": {
+        "category": "apparel",
+        "color": "black",
+        "size": "L"
+      },
+      "max_price": 1500,
+      "buyer_confirmed": false
+    },
+    "result": {
+      "status": "DECLINED",
+      "sku": "HD-BLK-L",
+      "reason": "Best match 'Classic Black Hoodie' (HD-BLK-L) is out of stock. Declining rather than substituting without buyer confirmation."
+    }
+  }
+]
